@@ -59,6 +59,8 @@
     }
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Font Awesome CDN for Brand Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-[#F8F5EF] text-[#35302B] antialiased selection:bg-beige-300 selection:text-brown-900">
@@ -341,62 +343,190 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-brown-900 text-beige-200 pt-16 pb-12 border-t border-brown-800">
+  <footer class="bg-brown-900 text-beige-200 pt-14 pb-28 md:pb-12 border-t border-brown-800 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-brown-800">
-        <div class="lg:col-span-2 space-y-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 pb-12 border-b border-brown-800">
+        
+        <!-- Column 1: Company Information & Socials -->
+        <div class="sm:col-span-2 lg:col-span-1 space-y-4">
           <a href="../index.html" class="flex items-center gap-3">
             <div class="w-9 h-9 rounded-lg bg-brown-800 flex items-center justify-center text-white">
               <i data-lucide="cross" class="w-4 h-4 text-gold-400"></i>
             </div>
             <span class="font-heading text-xl font-bold tracking-tight text-white">MedSarthi<span class="text-gold-500">.</span></span>
           </a>
-          <p class="text-xs text-beige-300 leading-relaxed max-w-sm">
-            "Your Trust, Our Commitment" • Founded in 2022 by Dr. Prasad Wani. Dedicated medical education and admission counselling consultancy.
+          <p class="text-xs text-gold-400 font-semibold tracking-wide">
+            "Your Trust, Our Commitment"
+          </p>
+          <p class="text-sm sm:text-xs text-beige-300 leading-relaxed">
+            Founded in 2022 by Dr. Prasad Wani. Premier medical education & NEET admission guidance across Maharashtra, MP, and pan-India.
+          </p>
+          <div>
+            <span class="text-xs font-semibold text-white uppercase tracking-wider block mb-2">Connect With Us</span>
+            <div class="flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/medsarthi_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded-lg bg-brown-800 hover:bg-gold-600 text-beige-200 hover:text-white border border-brown-700 hover:border-gold-500 flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm group"
+                aria-label="MedSarthi Instagram Profile"
+              >
+                <i class="fa-brands fa-instagram text-[20px] text-beige-200 group-hover:text-white transition-colors"></i>
+              </a>
+              <a
+                href="https://youtube.com/@medsarthi_official"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded-lg bg-brown-800 hover:bg-gold-600 text-beige-200 hover:text-white border border-brown-700 hover:border-gold-500 flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm group"
+                aria-label="MedSarthi YouTube Channel"
+              >
+                <i class="fa-brands fa-youtube text-[20px] text-beige-200 group-hover:text-white transition-colors"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-base sm:text-sm font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="text-sm sm:text-xs space-y-2 text-beige-300">
+            <li><a href="../index.html" class="hover:text-white transition-colors py-0.5 inline-block">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors py-0.5 inline-block">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">Our Services</a></li>
+            <li><a href="universities.html" class="hover:text-white transition-colors py-0.5 inline-block">Universities</a></li>
+            <li><a href="admission.html" class="hover:text-white transition-colors py-0.5 inline-block">Admission Process</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors py-0.5 inline-block">Gallery</a></li>
+            <li><a href="faq.html" class="hover:text-white transition-colors py-0.5 inline-block">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors py-0.5 inline-block">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Courses Offered -->
+        <div class="space-y-3">
+          <h4 class="text-base sm:text-sm font-bold uppercase tracking-wider text-white">Courses Offered</h4>
+          <ul class="text-sm sm:text-xs space-y-2 text-beige-300">
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">MBBS Admission</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">BDS (Dental)</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">BAMS (Ayurveda)</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">BHMS (Homeopathy)</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">BVSc (Veterinary)</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">B. Physiotherapy</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors py-0.5 inline-block">Engineering Programs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Office Locations -->
+        <div class="space-y-3">
+          <h4 class="text-base sm:text-sm font-bold uppercase tracking-wider text-white">Office Locations</h4>
+          <ul class="text-sm sm:text-xs space-y-3 text-beige-300">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-white block">Bhopal (MP)</span>
+                <span class="text-beige-300 text-xs sm:text-[11px] leading-relaxed block">Indra Vihar Colony, Lalghati, Bhopal</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-white block">Jamner (MH)</span>
+                <span class="text-beige-300 text-xs sm:text-[11px] leading-relaxed block">Navkar Plaza, Jamner</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-white block">Warora (MH)</span>
+                <span class="text-beige-300 text-xs sm:text-[11px] leading-relaxed block">Opp. DCC Bank, Nagar Parishad</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-white block">Baramati (MH)</span>
+                <span class="text-beige-300 text-xs sm:text-[11px] leading-relaxed block">Baramati Center, Maharashtra</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Direct Contact -->
+        <div class="space-y-3">
+          <h4 class="text-base sm:text-sm font-bold uppercase tracking-wider text-white">Direct Contact</h4>
+          <div class="text-sm sm:text-xs space-y-2.5 text-beige-300">
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="user" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <span><strong class="text-white">Director:</strong> Dr. Prasad Wani</span>
+            </p>
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="phone-call" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <a href="tel:+917414974584" class="hover:text-white transition-colors">
+                <strong class="text-white">Phone:</strong> +91 7414974584
+              </a>
+            </p>
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="message-circle" class="w-4 h-4 text-green-400 shrink-0 mt-0.5"></i>
+              <a href="https://wa.me/917414974584" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">
+                <strong class="text-white">WhatsApp 1:</strong> +91 7414974584
+              </a>
+            </p>
+            <p class="flex items-start gap-2.5">
+              <i data-lucide="message-circle" class="w-4 h-4 text-green-400 shrink-0 mt-0.5"></i>
+              <a href="https://wa.me/919203969292" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">
+                <strong class="text-white">WhatsApp 2:</strong> +91 9203969292
+              </a>
+            </p>
+            <p class="flex items-start gap-2.5 break-all">
+              <i data-lucide="mail" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+              <a href="mailto:medsarthi.ms@gmail.com" class="hover:text-white transition-colors">
+                medsarthi.ms@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Section: Copyright & Tagline -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-sm sm:text-xs text-beige-300">
+        <div class="leading-relaxed">
+          <p>© 2022–2026 MedSarthi Educational Consultancy. All rights reserved.</p>
+          <p class="text-xs sm:text-[11px] text-beige-400 mt-1 sm:mt-0.5">
+            Transparent guidance • NEET entrance & medical admissions advisory.
           </p>
         </div>
-        <div class="space-y-3">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
-          <ul class="text-xs space-y-2 text-beige-300">
-            <li><a href="../index.html" class="hover:text-white">Home</a></li>
-            <li><a href="about.html" class="hover:text-white">About Us</a></li>
-            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
-            <li><a href="universities.html" class="hover:text-white">Universities</a></li>
-            <li><a href="admission.html" class="hover:text-white">Admission Process</a></li>
-            <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
-            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
-            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="space-y-3">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Courses</h4>
-          <ul class="text-xs space-y-2 text-beige-300">
-            <li><a href="services.html" class="hover:text-white">MBBS Admission</a></li>
-            <li><a href="services.html" class="hover:text-white">BDS (Dental)</a></li>
-            <li><a href="services.html" class="hover:text-white">BAMS (Ayurveda)</a></li>
-            <li><a href="services.html" class="hover:text-white">BHMS (Homeopathy)</a></li>
-            <li><a href="services.html" class="hover:text-white">BVSc (Veterinary)</a></li>
-            <li><a href="services.html" class="hover:text-white">B. Physiotherapy</a></li>
-          </ul>
-        </div>
-        <div class="space-y-3">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Direct Contact</h4>
-          <p class="text-xs text-beige-300">Dr. Prasad Wani</p>
-          <p class="text-xs text-beige-300">Phone / WhatsApp: +91 7414974584</p>
-          <p class="text-xs text-beige-300">WhatsApp 2: +91 9203969292</p>
-          <p class="text-xs text-beige-300">Email: medsarthi.ms@gmail.com</p>
+        <div class="flex flex-col items-center md:items-end gap-1 leading-relaxed">
+          <span class="font-bold text-white text-xs">"Your Trust, Our Commitment"</span>
+          <span class="text-xs sm:text-[11px] text-beige-400">
+            Offices: Bhopal (MP) • Jamner (MH) • Warora (MH) • Baramati (MH)
+          </span>
         </div>
       </div>
-      <div class="pt-8 text-xs text-beige-300 text-center">
-        © 2022–2026 MedSarthi Educational Consultancy. All rights reserved.
-      </div>
+
     </div>
   </footer>
 
-  <!-- WhatsApp & Modals -->
-  <button type="button" data-open-whatsapp class="fixed right-6 bottom-8 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:scale-105 transition-transform" aria-label="WhatsApp">
-    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  <!-- WhatsApp Floating & Modals -->
+  <button type="button" data-open-whatsapp class="fixed right-4 sm:right-6 bottom-20 md:bottom-8 z-40 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:scale-105 transition-transform flex items-center gap-2 group" style="position: fixed;" aria-label="WhatsApp MedSarthi">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-200 text-xs font-bold pr-1">
+      WhatsApp
+    </span>
   </button>
+
+  <!-- Mobile Bottom Quick Sticky Call/WhatsApp Bar -->
+  <div class="block md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-surface-border px-4 py-2 shadow-md">
+    <div class="flex items-center gap-2">
+      <a href="tel:+917414974584" class="flex-1 py-2 px-3 rounded-lg border border-brown-700 text-brown-900 text-xs font-bold flex items-center justify-center gap-1.5">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-600"></i>
+        <span>Call Doctor</span>
+      </a>
+      <button type="button" data-open-modal="counselling" class="flex-[1.5] py-2 px-3 rounded-lg bg-brown-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm">
+        <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Free Counselling</span>
+      </button>
+    </div>
+  </div>
 
   <div id="whatsapp-selector-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-900/60 backdrop-blur-sm">
     <div class="modal-box relative w-full max-w-sm bg-white rounded-xl p-6 shadow-xl border border-surface-border">
