@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedSarthi Educational Consultancy | "Your Trust, Our Commitment" | Est. 2022</title>
+  <meta name="description" content="MedSarthi Educational Consultancy, founded by Dr. Prasad Wani (Est. 2022). Transparent admission counselling for MBBS, BDS, BAMS, BHMS, BVSc, Physiotherapy & Engineering across MP & Maharashtra.">
+  <meta name="keywords" content="MedSarthi, Dr. Prasad Wani, Medical Admission Counselling, MBBS Admission Bhopal, BAMS Jamner, BHMS Warora, BDS Baramati, NEET Eligibility Guidance">
+  
+  <!-- Favicon SVG (MedSarthi Caduceus & Chariot Compass Motif) -->
+<!-- MedSarthi Company Favicon -->
+<!-- Website Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/medsarthi-logo.png">
+<link rel="apple-touch-icon" href="assets/images/medsarthi-logo.png">  <!-- Google Fonts: Manrope (Headings) & DM Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brown: {
+              900: '#38291F', // Dark Brown
+              800: '#4D3627',
+              700: '#65452F', // Primary Brown
+              600: '#7E573C',
+              500: '#976A4B',
+              200: '#EADFD2',
+              100: '#F0E8DF',
+              50: '#FBF9F6',
+            },
+            beige: {
+              500: '#BFA583',
+              400: '#D9C3A5', // Warm Beige
+              300: '#E7D8C4',
+              200: '#F1E9DE',
+              100: '#F8F5EF', // Light Cream
+              50: '#FCFAF7',
+            },
+            gold: {
+              700: '#8E7043',
+              600: '#A38250',
+              500: '#B79562', // Accent Gold
+              400: '#CCA878',
+              100: '#F5EEDF',
+              50: '#FAF6EE',
+            },
+            surface: {
+              cream: '#F8F5EF',
+              card: '#FFFFFF',
+              text: '#35302B',
+              muted: '#6E645A',
+              border: '#EAE3D9',
+            }
+          },
+          fontFamily: {
+            heading: ['"Manrope"', '-apple-system', 'sans-serif'],
+            sans: ['"DM Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['"Manrope"', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8F5EF] text-[#35302B] antialiased selection:bg-beige-300 selection:text-brown-900">
+
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT & MAIN NAVIGATION
+       ========================================================================= -->
+  <header class="sticky top-0 z-50">
+    <!-- Top Announcement Strip -->
+    <div class="bg-brown-900 text-beige-200 text-xs py-2 px-4 border-b border-brown-800">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-gold-500/20 text-gold-300 border border-gold-500/30">
+            Est. 2022
+          </span>
+          <span class="text-beige-200 font-medium">"Your Trust, Our Commitment" • NEET & Medical Admission Counselling 2025–26</span>
+        </div>
+        <div class="flex items-center gap-6 text-[11px]">
+          <span class="hidden md:inline-flex items-center gap-1.5 text-beige-300">
+            <i data-lucide="user" class="w-3.5 h-3.5 text-gold-400"></i> Led by Dr. Prasad Wani
+          </span>
+          <a href="tel:+917414974584" class="hover:text-white transition-colors flex items-center gap-1 font-semibold">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-400"></i> +91 7414974584
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav id="main-header" class="glass-header py-3.5 px-4 sm:px-6 lg:px-8 transition-all duration-200">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <!-- Company Logo -->
+        <a href="index.html" class="flex items-center shrink-0">
+            <img
+                src="assets/images/medsarthi-logo.png"
+                alt="MedSarthi Educational Consultancy"
+                class="h-12 sm:h-14 w-auto max-w-[220px] object-contain"
+                width="220"
+                height="56"
+                fetchpriority="high"
+            >
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-7">
+          <a href="index.html" class="text-xs font-bold uppercase tracking-wider text-brown-900 border-b-2 border-brown-900 pb-0.5">Home</a>
+          <a href="pages/about.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">About Us</a>
+          <a href="pages/services.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">Our Services</a>
+          <a href="pages/universities.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">Universities</a>
+          <a href="pages/admission.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">Admission Process</a>
+          <a href="pages/gallery.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">Gallery</a>
+          <a href="pages/faq.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">FAQs</a>
+          <a href="pages/contact.html" class="text-xs font-semibold uppercase tracking-wider text-brown-700 hover:text-brown-900 transition-colors">Contact Us</a>
+        </div>
+
+        <!-- Action CTAs & Mobile Trigger -->
+        <div class="flex items-center gap-2.5">
+          <!-- WhatsApp Quick Action -->
+          <button type="button" data-open-whatsapp class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-green-800 bg-green-50 hover:bg-green-100 border border-green-200 transition-colors" title="Chat on WhatsApp">
+            <i data-lucide="message-circle" class="w-4 h-4 text-green-600"></i>
+            <span class="hidden xl:inline">WhatsApp</span>
+          </button>
+
+          <!-- Get Free Counselling CTA -->
+          <button type="button" data-open-modal="counselling" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors">
+            <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold-400"></i>
+            <span>Get Free Counselling</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2 rounded-lg text-brown-900 hover:bg-beige-200 transition-colors" aria-label="Toggle Navigation">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-brown-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-200"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-lg transform translate-x-full transition-transform duration-200 flex flex-col justify-between">
+    <div class="p-6">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-border">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-md bg-brown-900 flex items-center justify-center text-white">
+            <i data-lucide="cross" class="w-4 h-4 text-gold-400"></i>
+          </div>
+          <span class="font-heading text-lg font-bold text-brown-900">MedSarthi</span>
+        </div>
+        <button id="close-mobile-drawer" type="button" class="p-2 text-surface-muted hover:text-brown-900 transition-colors" aria-label="Close Navigation">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-3 mt-4 text-sm">
+        <a href="index.html" class="flex items-center justify-between py-1.5 text-brown-900 font-bold border-b border-surface-border">
+          <span>Home</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="pages/about.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>About Us</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/services.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>Our Services</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/universities.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>Universities</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/admission.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>Admission Process</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/gallery.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>Gallery</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/faq.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium border-b border-surface-border">
+          <span>FAQs</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+        <a href="pages/contact.html" class="flex items-center justify-between py-1.5 text-brown-700 hover:text-brown-900 font-medium">
+          <span>Contact Us</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-surface-muted"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="p-6 bg-beige-100 border-t border-surface-border space-y-2.5">
+      <button type="button" data-open-modal="counselling" class="w-full py-2.5 px-4 rounded-lg text-center text-xs font-bold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors">
+        Get Free Counselling
+      </button>
+      <button type="button" data-open-whatsapp class="w-full py-2.5 px-4 rounded-lg text-center text-xs font-semibold text-green-800 bg-white border border-green-200 flex items-center justify-center gap-2">
+        <i data-lucide="message-circle" class="w-4 h-4 text-green-600"></i> WhatsApp Dr. Prasad Wani
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. HOMEPAGE HERO SECTION (#4)
+       ========================================================================= -->
+  <section class="bg-[#F8F5EF] py-14 sm:py-16 lg:py-20 border-b border-surface-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#F0E8DF] border border-beige-300 text-brown-800 text-xs font-semibold">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-gold-600"></i>
+            <span>MedSarthi Educational Consultancy • Est. 2022</span>
+          </div>
+
+          <!-- Clean Three-Line Headline in Manrope (Balanced Scale) -->
+          <h1 class="font-heading text-2xl sm:text-3xl lg:text-[40px] font-extrabold text-brown-900 leading-[1.2] tracking-tight">
+            Your Future Deserves<br>
+            The Right Guidance.<br>
+            <span class="text-brown-700">Your Trust, Our Commitment.</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-brown-700 leading-relaxed max-w-xl font-normal">
+            At MedSarthi Educational Consultancy, we guide aspiring students towards the right educational opportunities through personalised counselling, transparent guidance and dedicated admission support.
+          </p>
+
+          <!-- Clean Value Tags -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1 text-xs text-brown-800">
+            <div class="p-2.5 bg-white rounded-lg border border-surface-border flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-gold-600 flex-shrink-0"></i>
+              <span class="font-medium">MBBS, BDS & AYUSH</span>
+            </div>
+            <div class="p-2.5 bg-white rounded-lg border border-surface-border flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-gold-600 flex-shrink-0"></i>
+              <span class="font-medium">NEET Eligibility Advice</span>
+            </div>
+            <div class="p-2.5 bg-white rounded-lg border border-surface-border flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-gold-600 flex-shrink-0"></i>
+              <span class="font-medium">Bhopal & MH Centers</span>
+            </div>
+          </div>
+
+          <!-- Prominent Primary CTA & Direct Contact -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <button type="button" data-open-modal="counselling" class="px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="calendar" class="w-4 h-4 text-gold-400"></i>
+              <span>Get Free Counselling</span>
+            </button>
+            <a href="tel:+917414974584" class="px-4 py-3 rounded-lg text-xs font-semibold text-brown-800 hover:text-brown-950 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-600"></i>
+              <span>Call Dr. Prasad Wani: +91 7414974584</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual & Simple Enquiry Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <!-- Balanced Professional Photograph -->
+          <div class="rounded-xl overflow-hidden border border-surface-border bg-white shadow-sm">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=75&w=720" alt="MedSarthi Professional Medical Education Counselling" width="720" height="360" fetchpriority="high" class="w-full h-52 sm:h-60 object-cover object-center">
+          </div>
+
+          <!-- Simple & Clean Enquiry Card -->
+          <div class="p-5 rounded-xl border border-surface-border bg-white shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-brown-900 tracking-wide uppercase">Fast-Track Callback</span>
+              <span class="text-[11px] font-medium text-brown-700 bg-beige-200 px-2 py-0.5 rounded">Quick Assistance</span>
+            </div>
+            <p class="text-xs text-surface-muted mb-3">
+              Enter your details to receive personalized cutoff guidance:
+            </p>
+            <form data-demo-form="true" class="space-y-2.5">
+              <input type="text" name="name" required placeholder="Student's Full Name" class="input-academic py-2 text-xs">
+              <input type="tel" name="phone" required placeholder="Mobile / WhatsApp Number" class="input-academic py-2 text-xs">
+              <button type="submit" class="w-full py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors">
+                Request Callback
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. ABOUT MEDSARTHI SECTION (#5)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-xl overflow-hidden border border-surface-border bg-beige-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=75&w=700" alt="Doctor Mentorship MedSarthi" width="700" height="460" loading="lazy" class="w-full h-72 sm:h-80 object-cover">
+          </div>
+          <div class="absolute -bottom-4 -right-2 sm:-right-4 p-3.5 rounded-lg bg-brown-900 text-white shadow-md max-w-[220px]">
+            <p class="text-xs font-bold text-gold-400">Established in 2022</p>
+            <p class="text-[11px] text-beige-200 mt-0.5 leading-snug">Dedicated to student medical education guidance across Central India.</p>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="badge-academic">
+            About MedSarthi
+          </div>
+
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 leading-tight">
+            Guiding Aspiring Healthcare Professionals with Care & Transparency
+          </h2>
+
+          <!-- Client-Provided Company Introduction Text -->
+          <p class="text-sm text-brown-700 leading-relaxed">
+            MedSarthi Educational Consultancy is dedicated to guiding and supporting students throughout their medical education journey. We aim to make the admission and counselling process easier, clearer and more transparent by providing the right guidance at every step.
+          </p>
+
+          <p class="text-sm text-brown-700 leading-relaxed">
+            Our focus is on helping students make informed decisions through admission counselling, college selection, course counselling, eligibility guidance, application updates and personalised support. At MedSarthi, we believe every student's dream deserves the right direction, proper guidance and dedicated support.
+          </p>
+
+          <!-- Mission, Vision & Why MedSarthi -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-4 rounded-xl bg-[#F8F5EF] border border-surface-border">
+              <i data-lucide="compass" class="w-4 h-4 text-gold-600 mb-1.5"></i>
+              <h3 class="text-xs font-bold text-brown-900 uppercase tracking-wider mb-1">Our Mission</h3>
+              <p class="text-[11px] text-brown-700 leading-relaxed">
+                Empowering every student to make confident, informed medical and professional academic decisions.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8F5EF] border border-surface-border">
+              <i data-lucide="eye" class="w-4 h-4 text-gold-600 mb-1.5"></i>
+              <h3 class="text-xs font-bold text-brown-900 uppercase tracking-wider mb-1">Our Vision</h3>
+              <p class="text-[11px] text-brown-700 leading-relaxed">
+                To be Central India's most dependable, transparent, and ethical education consultancy.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8F5EF] border border-surface-border">
+              <i data-lucide="shield-check" class="w-4 h-4 text-gold-600 mb-1.5"></i>
+              <h3 class="text-xs font-bold text-brown-900 uppercase tracking-wider mb-1">Why MedSarthi</h3>
+              <p class="text-[11px] text-brown-700 leading-relaxed">
+                Personal involvement of Dr. Prasad Wani with physical presence across 4 office centers.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="pages/about.html" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brown-900 hover:text-brown-700 transition-colors">
+              <span>Read Full Company Profile & Leadership</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-600"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. COURSES & SERVICES EXPLORATION (#6)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-[#F8F5EF] border-y border-surface-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="badge-academic mb-2">
+          Academic Offerings & Services
+        </span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 mb-2">
+          Courses & Comprehensive Guidance
+        </h2>
+        <p class="text-sm text-brown-700 leading-relaxed">
+          From premier clinical medicine and traditional AYUSH healthcare systems to allied sciences and professional engineering programs.
+        </p>
+      </div>
+
+      <!-- Course Pathways Showcase -->
+      <div class="mb-10">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-brown-600 mb-3 flex items-center gap-2">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-gold-600"></i>
+          <span>Key Courses Supported</span>
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5">
+          
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">MBBS</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Medicine & Surgery</span>
+            <button type="button" data-open-modal="counselling" data-course-target="MBBS" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">BDS</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Dental Surgery</span>
+            <button type="button" data-open-modal="counselling" data-course-target="BDS" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">BAMS</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Ayurvedic Medicine</span>
+            <button type="button" data-open-modal="counselling" data-course-target="BAMS" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">BHMS</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Homeopathic Medicine</span>
+            <button type="button" data-open-modal="counselling" data-course-target="BHMS" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">BVSc</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Veterinary Science</span>
+            <button type="button" data-open-modal="counselling" data-course-target="BVSc" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic">
+            <span class="text-sm font-bold text-brown-900 block font-heading">BPT</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">Physiotherapy</span>
+            <button type="button" data-open-modal="counselling" data-course-target="B. Physiotherapy" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-white border border-surface-border text-center card-academic col-span-2 sm:col-span-1">
+            <span class="text-sm font-bold text-brown-900 block font-heading">Engineering</span>
+            <span class="text-[10px] text-surface-muted block mt-0.5">B.Tech / B.E.</span>
+            <button type="button" data-open-modal="counselling" data-course-target="Engineering" class="btn-counselling mt-2 text-[10px] font-semibold text-brown-800 hover:text-brown-950 underline">Enquire</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 7 Services Offered Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Service 1 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">MBBS Admission Guidance</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Step-by-step guidance through NEET state quota and All India Quota (AIQ) counseling rounds for government and private medical institutions.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="MBBS" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="file-check-2" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">NEET Eligibility Guidance</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Accurate breakdown of qualifying percentiles, category reservations, and subject eligibility rules to ensure error-free application filing.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="NEET Eligibility" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="files" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">Application & Documentation</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Complete support with verification checklists, affidavits, domicile and caste verification, preventing rejection due to technical errors.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="Documentation" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="compass" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">Course Counselling</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Clarity on career prospects, clinical training scope, and postgraduate pathways across MBBS, BDS, BAMS, BHMS, and Physiotherapy.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="Course Counselling" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="building-2" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">College Selection Guidance</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Realistic college preference list formulation aligning your rank with previous cutoffs, hospital bed capacities, and fee structures.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="College Selection" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card-academic rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-beige-200 text-brown-800 flex items-center justify-center mb-3">
+              <i data-lucide="user-check" class="w-5 h-5 text-brown-900"></i>
+            </div>
+            <h4 class="text-base font-bold text-brown-900 mb-1.5 font-heading">Personalised Student Support</h4>
+            <p class="text-xs text-brown-700 leading-relaxed mb-3">
+              Direct access to Dr. Prasad Wani and dedicated mentors for one-on-one doubt resolution throughout the admission lifecycle.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-surface-border flex items-center justify-between">
+            <a href="pages/services.html" class="text-xs font-semibold text-brown-800 hover:text-brown-950 flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-3 h-3"></i></a>
+            <button type="button" data-open-modal="counselling" data-course-target="Personal Support" class="btn-counselling px-3 py-1.5 rounded-md text-xs font-semibold bg-brown-700 text-white hover:bg-brown-900 transition-colors">Enquiry</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="pages/services.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider bg-brown-900 hover:bg-brown-800 text-white shadow-sm transition-colors">
+          <span>View All Services & Course Roadmaps</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-400"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. UNIVERSITY & COLLEGE SECTION (#7 - WITH MANDATORY CLIENT RULE)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <div class="sample-pill mb-2">
+          <i data-lucide="info" class="w-3.5 h-3.5 text-gold-700"></i>
+          <span>Educational Reference Directory • Independent Guidance (No Claims of Official Partnerships)</span>
+        </div>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 mb-2">
+          University & College Information Portal
+        </h2>
+        <p class="text-sm text-brown-700 leading-relaxed">
+          Explore key medical and professional colleges across Madhya Pradesh and Maharashtra to review intake capacities, affiliations, and admission criteria.
+        </p>
+      </div>
+
+      <!-- Directory Search & Filter Controls -->
+      <div class="bg-beige-100 p-3 rounded-xl border border-beige-300 mb-6">
+        <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2.5">
+          
+          <div class="relative flex-1">
+            <i data-lucide="search" class="w-4 h-4 text-brown-600 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input id="college-search-input" type="text" placeholder="Search by college name, city (Bhopal, Jalgaon, Baramati...), or course..." class="w-full pl-9 pr-3.5 py-2 rounded-lg border border-beige-300 bg-white text-xs font-medium focus:outline-none focus:border-brown-700">
+          </div>
+
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none text-xs">
+            <button type="button" data-filter-category="all" class="college-filter-btn px-3 py-1.5 rounded-lg font-bold whitespace-nowrap bg-brown-900 text-white transition-all shadow-sm">
+              All Courses
+            </button>
+            <button type="button" data-filter-category="mbbs" class="college-filter-btn px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap bg-white text-brown-900 hover:bg-beige-200 border border-beige-300 transition-all">
+              MBBS
+            </button>
+            <button type="button" data-filter-category="bds" class="college-filter-btn px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap bg-white text-brown-900 hover:bg-beige-200 border border-beige-300 transition-all">
+              BDS
+            </button>
+            <button type="button" data-filter-category="bams" class="college-filter-btn px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap bg-white text-brown-900 hover:bg-beige-200 border border-beige-300 transition-all">
+              BAMS
+            </button>
+            <button type="button" data-filter-category="bhms" class="college-filter-btn px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap bg-white text-brown-900 hover:bg-beige-200 border border-beige-300 transition-all">
+              BHMS
+            </button>
+            <button type="button" data-filter-category="bvsc" class="college-filter-btn px-3 py-1.5 rounded-lg font-semibold whitespace-nowrap bg-white text-brown-900 hover:bg-beige-200 border border-beige-300 transition-all">
+              BVSc
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- College Directory Grid (Injected via script.js) -->
+      <div id="college-directory-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Injected dynamically -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="college-empty-state" class="hidden text-center py-10 bg-beige-50 rounded-xl border border-dashed border-beige-300">
+        <i data-lucide="building" class="w-7 h-7 text-brown-400 mx-auto mb-2"></i>
+        <h4 class="text-xs font-bold text-brown-900">No matching colleges found</h4>
+        <p class="text-[11px] text-surface-muted mt-0.5">Try another search keyword or switch back to "All Courses".</p>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="pages/universities.html" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brown-900 hover:text-brown-700">
+          <span>Explore Detailed Institutional Directory & Admission Matrices</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-600"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. ADMISSION PROCESS (#8)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-[#F8F5EF] border-t border-surface-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="badge-academic mb-2">
+          Structured 6-Stage Journey
+        </span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 mb-2">
+          Our Admission Process
+        </h2>
+        <p class="text-sm text-brown-700 leading-relaxed max-w-xl mx-auto">
+          A transparent, stress-free pathway from initial NEET assessment to final college enrollment.
+        </p>
+      </div>
+
+      <!-- Timeline Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 01</span>
+            <i data-lucide="message-square" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">Initial Counselling</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Personal discussion with the student and parents to understand aspirations, previous academic history, and financial preferences.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 02</span>
+            <i data-lucide="book" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">Course Selection</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Evaluating medical and allied disciplines (MBBS, BDS, BAMS, BHMS, BVSc, Physiotherapy) to choose the best clinical path.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 03</span>
+            <i data-lucide="building" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">College Selection</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Mapping student NEET scores against authentic previous cutoffs to formulate a realistic and strategic college preference list.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 04</span>
+            <i data-lucide="file-check" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">Eligibility Guidance</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Checking category requirements, domicile criteria, and state-specific counseling rules to prevent disqualification.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 05</span>
+            <i data-lucide="files" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">Application & Docs</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Hands-on support with portal registration, choice filling, document uploads, and tracking seat allotment rounds.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white border border-surface-border card-academic">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[10px] uppercase font-bold text-brown-800 bg-[#F0E8DF] px-2 py-0.5 rounded">Step 06</span>
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-brown-700"></i>
+          </div>
+          <h3 class="text-base font-bold text-brown-900 mb-1 font-heading">Admission Support</h3>
+          <p class="text-xs text-brown-700 leading-relaxed">
+            Assisting with final physical reporting at the allocated college, fee submission compliance, and onboarding formalities.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="pages/admission.html" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brown-900 hover:text-brown-700">
+          <span>Read Comprehensive State & AIQ Quota Admission Guidelines</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-600"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. WHY CHOOSE MEDSARTHI (#9)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-brown-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-gold-500/20 text-gold-300 text-[11px] font-bold uppercase tracking-wider mb-2 border border-gold-500/30">
+          Our Foundation of Trust
+        </span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-white mb-2">
+          Why Aspiring Doctors Choose MedSarthi
+        </h2>
+        <p class="text-sm text-beige-200 leading-relaxed">
+          Guided by our founding motto: "Your Trust, Our Commitment". We ensure complete honesty in every recommendation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="user-check" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Personalised Student Guidance</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            Every student receives custom attention based on individual score, aptitude, and preferences rather than a one-size-fits-all formula.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="scale" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Transparent Counselling</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            Zero misleading claims or false promises. Clear analysis of merit lists, fee structures, and realistic admission likelihoods.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Complete Admission Support</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            Continuous handholding from registration through round 1, round 2, mop-up, and stray vacancy rounds.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Multiple Career Options</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            Expertise across MBBS, BDS, BAMS, BHMS, BVSc, and Physiotherapy ensures every eligible student finds a fulfilling healthcare career.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="heart" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Student-First Approach</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            We prioritize the long-term career success and mental well-being of the student above everything else.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brown-800 border border-brown-700">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center mb-3">
+            <i data-lucide="handshake" class="w-4 h-4"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white mb-1.5 font-heading">Trust Beyond Admission</h3>
+          <p class="text-xs text-beige-200 leading-relaxed">
+            Our association does not end with seat allotment; we continue to advise students on academic milestones throughout their courses.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. GALLERY PREVIEW (#10)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="badge-academic mb-2">Moments & Engagement</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900">
+            Life at MedSarthi & Student Counselling
+          </h2>
+        </div>
+        <a href="pages/gallery.html" class="text-xs font-semibold text-brown-900 hover:text-brown-700 flex items-center gap-1">
+          <span>View Full Gallery (5 Categories)</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-600"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3.5">
+        <div class="rounded-xl overflow-hidden border border-surface-border bg-beige-100">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=75&w=500" alt="MedSarthi Student Guidance" width="500" height="340" loading="lazy" class="w-full h-44 sm:h-48 object-cover">
+          <div class="p-2 bg-white text-[11px] font-semibold text-brown-900">1-on-1 Student Counselling</div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-surface-border bg-beige-100">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=500" alt="MedSarthi Advisory Center" width="500" height="340" loading="lazy" class="w-full h-44 sm:h-48 object-cover">
+          <div class="p-2 bg-white text-[11px] font-semibold text-brown-900">Office & Advisory Center</div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-surface-border bg-beige-100">
+          <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&q=75&w=500" alt="MedSarthi Education Seminar" width="500" height="340" loading="lazy" class="w-full h-44 sm:h-48 object-cover">
+          <div class="p-2 bg-white text-[11px] font-semibold text-brown-900">Educational Seminar & Updates</div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-surface-border bg-beige-100">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=75&w=500" alt="MedSarthi Student Success" width="500" height="340" loading="lazy" class="w-full h-44 sm:h-48 object-cover">
+          <div class="p-2 bg-white text-[11px] font-semibold text-brown-900">Student Campus Guidance</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. STUDENT TESTIMONIALS PLACEHOLDERS (#11 - MANDATORY CLIENT RULE)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-[#F8F5EF] border-y border-surface-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <div class="sample-pill mb-2">
+          <i data-lucide="info" class="w-3.5 h-3.5 text-gold-700"></i>
+          <span>Verified Student Feedback • Sample Placeholders until Genuine Testimonials are Approved</span>
+        </div>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 mb-2">
+          Student & Parent Experiences
+        </h2>
+        <p class="text-sm text-brown-700 max-w-xl mx-auto">
+          We believe in authentic reputation. Below are sample template formats awaiting client-provided verified stories.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <div class="card-academic rounded-xl p-5 relative">
+          <i data-lucide="quote" class="w-6 h-6 text-gold-400/40 absolute top-4 right-4"></i>
+          <div class="text-gold-600 text-xs mb-2">★★★★★</div>
+          <p class="text-xs text-brown-700 leading-relaxed mb-3">
+            "[Sample Testimonial Placeholder: MedSarthi and Dr. Prasad Wani guided us accurately throughout the state quota choice filling for medical admission.]"
+          </p>
+          <div class="pt-2.5 border-t border-surface-border">
+            <h4 class="text-xs font-bold text-brown-900">[Student Name - MBBS Aspirant]</h4>
+            <p class="text-[10px] text-surface-muted">[Bhopal / Maharashtra Center]</p>
+          </div>
+        </div>
+
+        <div class="card-academic rounded-xl p-5 relative">
+          <i data-lucide="quote" class="w-6 h-6 text-gold-400/40 absolute top-4 right-4"></i>
+          <div class="text-gold-600 text-xs mb-2">★★★★★</div>
+          <p class="text-xs text-brown-700 leading-relaxed mb-3">
+            "[Sample Testimonial Placeholder: Transparent counselling and complete documentation support for BAMS college allotment without confusion.]"
+          </p>
+          <div class="pt-2.5 border-t border-surface-border">
+            <h4 class="text-xs font-bold text-brown-900">[Parent Feedback - AYUSH Admission]</h4>
+            <p class="text-[10px] text-surface-muted">[Jamner / Warora Branch]</p>
+          </div>
+        </div>
+
+        <div class="card-academic rounded-xl p-5 relative">
+          <i data-lucide="quote" class="w-6 h-6 text-gold-400/40 absolute top-4 right-4"></i>
+          <div class="text-gold-600 text-xs mb-2">★★★★★</div>
+          <p class="text-xs text-brown-700 leading-relaxed mb-3">
+            "[Sample Testimonial Placeholder: Realistic guidance on cutoffs and round-by-round counseling updates saved our academic year.]"
+          </p>
+          <div class="pt-2.5 border-t border-surface-border">
+            <h4 class="text-xs font-bold text-brown-900">[Student Name - BDS / BVSc]</h4>
+            <p class="text-[10px] text-surface-muted">[Baramati Center]</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. FAQ SECTION (#12 - COVERING 7 CLIENT QUESTIONS)
+       ========================================================================= -->
+  <section class="py-14 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="badge-academic mb-2">Common Inquiries</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900 mb-2">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-sm text-brown-700 leading-relaxed">
+          Clear answers to common questions about admissions, NEET eligibility, and our counselling support.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        
+        <!-- Question 1 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>What courses does MedSarthi provide guidance for?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            MedSarthi specializes in medical and healthcare courses including MBBS, BDS (Dental), BAMS (Ayurveda), BHMS (Homeopathy), BVSc (Veterinary Science), and B. Physiotherapy (BPT), along with guidance for engineering degree programs.
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>How can I get admission guidance from MedSarthi?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            You can book a free counselling session by filling out any form on our website, calling our helpline at +91 7414974584, messaging us on WhatsApp, or visiting any of our four branch offices in Bhopal (MP), Jamner (MH), Warora (MH), or Baramati (MH).
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>Is NEET eligibility guidance available?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            Yes. We provide complete NEET eligibility analysis including qualifying cutoff percentiles for general and reserved categories, 12th standard PCB aggregate percentage checks, and verification of state domicile requirements.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>How does the application process work?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            Our 6-step process includes initial counselling, course selection, college shortlisting, eligibility verification, documentation & choice-filling support during counseling rounds, and final reporting assistance.
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>What documents are required for medical admission counselling?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            Key documents include: 10th & 12th marksheets, NEET-UG admit card and scorecard, Domicile certificate, Category/Caste certificate (if applicable), Income certificate, Aadhaar card, and passport-size photographs.
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>How can I contact a counsellor directly?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            You can reach Dr. Prasad Wani directly via phone at +91 7414974584, on WhatsApp (+91 7414974584 or +91 9203969292), or via email at medsarthi.ms@gmail.com.
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="faq-item card-academic rounded-xl overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-5 py-3.5 text-left flex items-center justify-between gap-4 font-bold text-sm text-brown-900 hover:text-brown-700 transition-colors font-heading" aria-expanded="false">
+            <span>Can I get guidance for BDS, BAMS, BHMS and other alternative medical courses?</span>
+            <i data-lucide="chevron-down" class="accordion-icon w-4 h-4 text-gold-600 flex-shrink-0"></i>
+          </button>
+          <div class="accordion-content px-5 pb-4 text-xs text-brown-700 leading-relaxed border-t border-surface-border pt-2.5">
+            Absolutely. We have extensive expertise in AYUSH counseling (BAMS & BHMS), Dental surgery (BDS), Veterinary Science (BVSc), and Physiotherapy across government and private institutions in MP and Maharashtra.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. 4 OFFICE LOCATIONS STRIP (#13)
+       ========================================================================= -->
+  <section class="py-12 sm:py-14 bg-beige-100 border-t border-surface-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-8">
+        <span class="badge-academic mb-2">Our Presence Across Central India</span>
+        <h3 class="font-heading text-2xl sm:text-3xl font-bold text-brown-900">
+          Visit Us at Any of Our 4 Strategic Office Locations
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        
+        <div class="p-4 rounded-xl bg-white border border-surface-border shadow-sm">
+          <div class="flex items-center gap-2 mb-1.5 text-brown-900 font-bold font-heading text-sm">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold-600"></i>
+            <span>Bhopal (MP)</span>
+          </div>
+          <p class="text-surface-muted leading-relaxed">
+            Indra Vihar Colony, Lalghati, Bhopal, Madhya Pradesh
+          </p>
+          <span class="text-[10px] text-brown-800 font-semibold block mt-2.5">Primary MP Center</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-surface-border shadow-sm">
+          <div class="flex items-center gap-2 mb-1.5 text-brown-900 font-bold font-heading text-sm">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold-600"></i>
+            <span>Jamner (MH)</span>
+          </div>
+          <p class="text-surface-muted leading-relaxed">
+            Navkar Plaza, Jamner, Maharashtra
+          </p>
+          <span class="text-[10px] text-brown-800 font-semibold block mt-2.5">Khandesh Regional Center</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-surface-border shadow-sm">
+          <div class="flex items-center gap-2 mb-1.5 text-brown-900 font-bold font-heading text-sm">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold-600"></i>
+            <span>Warora (MH)</span>
+          </div>
+          <p class="text-surface-muted leading-relaxed">
+            Opposite to DCC Bank, Nagar Parishad Complex, Warora, Maharashtra
+          </p>
+          <span class="text-[10px] text-brown-800 font-semibold block mt-2.5">Vidarbha Regional Center</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-surface-border shadow-sm">
+          <div class="flex items-center gap-2 mb-1.5 text-brown-900 font-bold font-heading text-sm">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold-600"></i>
+            <span>Baramati (MH)</span>
+          </div>
+          <p class="text-surface-muted leading-relaxed">
+            Baramati, Maharashtra
+          </p>
+          <span class="text-[10px] text-brown-800 font-semibold block mt-2.5">Western Maharashtra Center</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. PROFESSIONAL FOOTER
+       ========================================================================= -->
+  <footer class="bg-brown-900 text-beige-200 pt-14 pb-10 border-t border-brown-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-brown-800">
+        
+        <!-- Column 1: Brand & Bio -->
+        <div class="lg:col-span-2 space-y-3.5">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-brown-800 flex items-center justify-center text-white">
+              <i data-lucide="cross" class="w-4 h-4 text-gold-400"></i>
+            </div>
+            <span class="font-heading text-xl font-bold tracking-tight text-white">
+              MedSarthi<span class="text-gold-500">.</span>
+            </span>
+          </a>
+          <p class="text-xs text-beige-300 leading-relaxed max-w-sm">
+            "Your Trust, Our Commitment" • Founded in 2022 by Dr. Prasad Wani. Dedicated medical education and admission counselling consultancy helping students secure their dream healthcare careers.
+          </p>
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="https://youtube.com/@medsarthi_official" target="_blank" rel="noopener" class="w-7 h-7 rounded-md bg-brown-800 hover:bg-gold-600 hover:text-white text-beige-200 flex items-center justify-center transition-colors" aria-label="YouTube">
+              <i data-lucide="youtube" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://www.instagram.com/medsarthi_official/" target="_blank" rel="noopener" class="w-7 h-7 rounded-md bg-brown-800 hover:bg-gold-600 hover:text-white text-beige-200 flex items-center justify-center transition-colors" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-2.5">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Quick Links</h4>
+          <ul class="text-xs space-y-1.5 text-beige-300">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="pages/about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">Our Services</a></li>
+            <li><a href="pages/universities.html" class="hover:text-white transition-colors">Universities</a></li>
+            <li><a href="pages/admission.html" class="hover:text-white transition-colors">Admission Process</a></li>
+            <li><a href="pages/gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="pages/faq.html" class="hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="pages/contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Courses Guided -->
+        <div class="space-y-2.5">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Courses Guided</h4>
+          <ul class="text-xs space-y-1.5 text-beige-300">
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">MBBS Admission</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">BDS (Dental)</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">BAMS (Ayurveda)</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">BHMS (Homeopathy)</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">BVSc (Veterinary)</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">B. Physiotherapy</a></li>
+            <li><a href="pages/services.html" class="hover:text-white transition-colors">Engineering Programs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Leadership -->
+        <div class="space-y-2.5">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white">Direct Contact</h4>
+          <p class="text-xs text-beige-300">
+            <strong>Contact:</strong> Dr. Prasad Wani
+          </p>
+          <p class="text-xs text-beige-300">
+            <strong>Phone / WhatsApp:</strong> +91 7414974584
+          </p>
+          <p class="text-xs text-beige-300">
+            <strong>WhatsApp 2:</strong> +91 9203969292
+          </p>
+          <p class="text-xs text-beige-300">
+            <strong>Email:</strong> medsarthi.ms@gmail.com
+          </p>
+          <div class="pt-1">
+            <!-- Client Enquiry Demo System Link -->
+            <button type="button" data-open-leads-viewer class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gold-400 hover:text-white underline">
+              <i data-lucide="database" class="w-3.5 h-3.5"></i>
+              <span>View Student Enquiries (Demo System)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-beige-300">
+        <div>
+          © 2022–2026 MedSarthi Educational Consultancy. All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Tagline: "Your Trust, Our Commitment"</span>
+          <span>•</span>
+          <span>Bhopal • Jamner • Warora • Baramati</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       CRITICAL FEATURE 14: FIRST-SCROLL QUICK ENQUIRY POPUP (~100PX SCROLL)
+       ========================================================================= -->
+  <div id="scroll-enquiry-popup" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-900/70 backdrop-blur-sm">
+    <div class="modal-box relative w-full max-w-md bg-white rounded-xl p-6 sm:p-7 shadow-xl border border-surface-border">
+      
+      <button id="close-scroll-popup" type="button" class="absolute top-4 right-4 text-surface-muted hover:text-brown-900 transition-colors" aria-label="Close Popup">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center mb-5">
+        <span class="badge-academic mb-2">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-gold-600"></i>
+          <span>Personal Admission Guidance</span>
+        </span>
+        <h3 class="font-heading text-xl font-bold text-brown-900">Get Free Callback & Cutoff Advice</h3>
+        <p class="text-xs text-brown-700 mt-1">
+          Connect directly with Dr. Prasad Wani & MedSarthi senior counsellors.
+        </p>
+      </div>
+
+      <!-- 3 Required Fields Only -->
+      <form id="scroll-enquiry-form" class="space-y-3.5">
+        <div>
+          <label for="popup-student-name" class="block text-xs font-bold text-brown-800 mb-1">Student's Full Name *</label>
+          <input id="popup-student-name" type="text" required placeholder="e.g. Aditi Sharma" class="input-academic">
+        </div>
+
+        <div>
+          <label for="popup-student-phone" class="block text-xs font-bold text-brown-800 mb-1">Mobile / WhatsApp Number *</label>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-xs font-bold text-brown-600">+91</span>
+            <input id="popup-student-phone" type="tel" pattern="[0-9]{10}" required placeholder="10-digit mobile number" class="input-academic pl-11">
+          </div>
+        </div>
+
+        <div>
+          <label for="popup-student-neet" class="block text-xs font-bold text-brown-800 mb-1">NEET Score (Actual or Expected)</label>
+          <input id="popup-student-neet" type="number" placeholder="e.g. 420 (or leave blank if appearing)" class="input-academic">
+        </div>
+
+        <button type="submit" class="w-full py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors flex items-center justify-center gap-2">
+          <span>Request a Callback</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gold-400"></i>
+        </button>
+
+        <p class="text-[10px] text-center text-surface-muted pt-0.5">
+          🔒 Your information is confidential. Displayed once per browser.
+        </p>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CRITICAL FEATURE 15: FLOATING WHATSAPP BUTTON (MULTI-NUMBER SUPPORT)
+       ========================================================================= -->
+  <button type="button" data-open-whatsapp class="fixed right-6 bottom-20 md:bottom-8 z-40 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:scale-105 transition-transform flex items-center gap-2 group" aria-label="WhatsApp MedSarthi">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-200 text-xs font-bold pr-1">
+      WhatsApp
+    </span>
+  </button>
+
+  <!-- WhatsApp Multi-Number Selector Modal -->
+  <div id="whatsapp-selector-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-900/60 backdrop-blur-sm">
+    <div class="modal-box relative w-full max-w-sm bg-white rounded-xl p-5 shadow-xl border border-surface-border">
+      <button id="close-whatsapp-modal" type="button" class="absolute top-4 right-4 text-surface-muted hover:text-brown-900">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="text-center mb-4">
+        <div class="w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+        </div>
+        <h3 class="font-heading text-lg font-bold text-brown-900">Connect on WhatsApp</h3>
+        <p class="text-xs text-brown-600 mt-0.5">Select a MedSarthi counsellor helpline:</p>
+      </div>
+
+      <div class="space-y-2.5">
+        <button type="button" onclick="openMedSarthiWhatsApp('917414974584', 'general')" class="w-full p-3 rounded-lg border border-green-200 hover:border-green-400 bg-green-50/40 hover:bg-green-50 transition-colors flex items-center justify-between text-left">
+          <div>
+            <span class="text-xs font-bold text-brown-900 block">Dr. Prasad Wani (Primary)</span>
+            <span class="text-xs font-medium text-green-700">+91 7414974584</span>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-green-600"></i>
+        </button>
+
+        <button type="button" onclick="openMedSarthiWhatsApp('919203969292', 'callback')" class="w-full p-3 rounded-lg border border-green-200 hover:border-green-400 bg-green-50/40 hover:bg-green-50 transition-colors flex items-center justify-between text-left">
+          <div>
+            <span class="text-xs font-bold text-brown-900 block">Admissions Desk</span>
+            <span class="text-xs font-medium text-green-700">+91 9203969292</span>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-green-600"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       GLOBAL FREE COUNSELLING MODAL
+       ========================================================================= -->
+  <div id="counselling-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-900/70 backdrop-blur-sm">
+    <div class="modal-box relative w-full max-w-lg bg-white rounded-xl p-6 sm:p-7 shadow-xl border border-surface-border max-h-[90vh] overflow-y-auto">
+      
+      <button id="close-counselling-modal" type="button" class="absolute top-4 right-4 text-surface-muted hover:text-brown-900">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-4">
+        <span class="badge-academic mb-1.5">Personalized Counselling</span>
+        <h3 class="font-heading text-xl font-bold text-brown-900">Book Free Admission Guidance</h3>
+        <p class="text-xs text-brown-600 mt-0.5">
+          Connect directly with Dr. Prasad Wani and get transparent course, college, and cutoff roadmaps.
+        </p>
+      </div>
+
+      <form id="global-counselling-form" class="space-y-3.5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brown-800 mb-1">Student's Full Name *</label>
+            <input type="text" name="student_name" required placeholder="e.g. Rohan Kulkarni" class="input-academic">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brown-800 mb-1">Phone / WhatsApp *</label>
+            <input type="tel" name="student_phone" required placeholder="+91 7414974584" class="input-academic">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-brown-800 mb-1">Interested Course</label>
+            <select name="course_interest" class="input-academic bg-white">
+              <option value="MBBS">MBBS Admission</option>
+              <option value="BDS">BDS (Dental)</option>
+              <option value="BAMS">BAMS (Ayurveda)</option>
+              <option value="BHMS">BHMS (Homeopathy)</option>
+              <option value="BVSc">BVSc (Veterinary)</option>
+              <option value="B. Physiotherapy">B. Physiotherapy</option>
+              <option value="Engineering">Engineering (B.Tech)</option>
+              <option value="Need Guidance">Need General Guidance</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-brown-800 mb-1">NEET Score (Actual / Expected)</label>
+            <input type="text" name="neet_score" placeholder="e.g. 380" class="input-academic">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-brown-800 mb-1">Preferred Office Location / State</label>
+          <select name="preferred_location" class="input-academic bg-white">
+            <option value="Bhopal (MP)">Bhopal Office (Madhya Pradesh)</option>
+            <option value="Jamner (MH)">Jamner Office (Maharashtra)</option>
+            <option value="Warora (MH)">Warora Office (Maharashtra)</option>
+            <option value="Baramati (MH)">Baramati Office (Maharashtra)</option>
+            <option value="Online Counselling">Online Telephonic / Video Counselling</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider bg-brown-700 hover:bg-brown-900 text-white shadow-sm transition-colors flex items-center justify-center gap-2">
+          <span>Confirm Free Counselling Request</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gold-400"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CRITICAL FEATURE 16: STUDENT ENQUIRY MANAGEMENT DEMO MODAL
+       ========================================================================= -->
+  <div id="admin-leads-modal" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-900/70 backdrop-blur-sm">
+    <div class="modal-box relative w-full max-w-3xl bg-white rounded-xl p-6 shadow-xl border border-surface-border max-h-[85vh] flex flex-col justify-between">
+      
+      <div>
+        <div class="flex items-center justify-between pb-3 border-b border-surface-border">
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="font-heading text-lg font-bold text-brown-900">MedSarthi Student Enquiry Log</h3>
+              <span id="leads-count-badge" class="badge-academic">0 Enquiries</span>
+            </div>
+            <p class="text-xs text-surface-muted mt-0.5">
+              Structured frontend lead capture system. Captures enquiries submitted across forms and popups.
+            </p>
+          </div>
+          <button id="close-leads-modal" type="button" class="text-surface-muted hover:text-brown-900">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Leads Table -->
+        <div class="overflow-x-auto mt-4 max-h-[50vh] overflow-y-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-beige-100 text-brown-900 border-b border-surface-border">
+                <th class="p-2.5 font-bold">Student Name</th>
+                <th class="p-2.5 font-bold">Mobile</th>
+                <th class="p-2.5 font-bold">NEET Score</th>
+                <th class="p-2.5 font-bold">Course</th>
+                <th class="p-2.5 font-bold">Enquiry Date</th>
+                <th class="p-2.5 font-bold">Status</th>
+              </tr>
+            </thead>
+            <tbody id="leads-table-body" class="divide-y divide-surface-border">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-surface-border flex items-center justify-between flex-wrap gap-2 text-xs">
+        <span class="text-[11px] text-surface-muted">
+          *Note: Permanent cloud persistence requires backend database integration.
+        </span>
+        <div class="flex items-center gap-2">
+          <button id="export-leads-csv" type="button" class="px-3 py-1.5 rounded-md bg-green-700 hover:bg-green-800 text-white font-bold flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Export CSV
+          </button>
+          <button id="clear-leads-data" type="button" class="px-3 py-1.5 rounded-md bg-slate-100 hover:bg-slate-200 text-brown-800 font-semibold">
+            Clear Local Log
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Quick Sticky Call/WhatsApp Bar -->
+  <div class="block md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-surface-border px-4 py-2 shadow-md">
+    <div class="flex items-center gap-2">
+      <a href="tel:+917414974584" class="flex-1 py-2 px-3 rounded-lg border border-brown-700 text-brown-900 text-xs font-bold flex items-center justify-center gap-1.5">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-600"></i>
+        <span>Call Doctor</span>
+      </a>
+      <button type="button" data-open-modal="counselling" class="flex-[1.5] py-2 px-3 rounded-lg bg-brown-700 text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm">
+        <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Free Counselling</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Central JS File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
